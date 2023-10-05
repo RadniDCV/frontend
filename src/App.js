@@ -35,8 +35,8 @@ import Plamen from "./pages/Plamen";
 import Vacation from "./pages/Vacation";
 import Vacsol from "./pages/Vacsol";
 import Lisvac from "./pages/Lisvac";
-import Pmmin from "./pages/reports/Pmmin";
-import Pmlab from "./pages/reports/Pmlab"
+
+
 
 function App() {
   return (

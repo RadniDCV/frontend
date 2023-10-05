@@ -51,7 +51,7 @@ function App() {
             id="inputGestion"
             value={data.gest}
           >
-            <option>Selecciona un Gestion</option>
+            <option>Gestion</option>
             {dataGes.map((gestion) => (
               <option key={gestion.gest} value={gestion.gest}>
                 {gestion.gest}
@@ -60,9 +60,9 @@ function App() {
           </Form.Select>
         </div>
       
-       <div>
+       <div className="px-2">
         <Button className="px-3" variant="outline-success" onClick={()=>generarPDF(data.gest)}>
-        <i class="bi bi-file-earmark-pdf"></i> Generar PDF
+        <i class="bi bi-file-earmark-pdf"></i> PDF
         </Button>
       </div>
     </div>

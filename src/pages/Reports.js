@@ -7,26 +7,26 @@ import Pmtri from "./reports/Pmtri";
 
 function Reports() {
   return (
-    <div className="p-3 d-flex align-items-center">
+    <div className="p-4 d-flex align-items-center justify-content-center">
       <div>
         <div className="d-flex p-2">
-          <div className="px-2 col-4">Reporte de planilla mensual</div>
+          <div className="px-2 col-5 tit_hom">Reporte de planilla mensual</div>
           <Pmmin />
         </div>
         <div className="d-flex p-2">
-          <div className="px-2 col-4">Reporte Aportes Laborales</div>
+          <div className="px-2 col-5 tit_hom">Reporte Aportes Laborales</div>
           <Pmlab />
         </div>
         <div className="d-flex p-2">
-          <div className="px-2 col-4">Reporte Aportes Patronales</div>
+          <div className="px-2 col-5 tit_hom">Reporte Aportes Patronales</div>
           <Pmpat />
         </div>
         <div className="d-flex p-2">
-          <div className="px-2 col-4">Reporte Provisiones</div>
+          <div className="px-2 col-5 tit_hom">Reporte Provisiones</div>
           <Pmpro />
         </div>
         <div className="d-flex p-2">
-          <div className="px-2 col-4">Planilla Tributaria</div>
+          <div className="px-2 col-5 tit_hom">Planilla Tributaria</div>
           <Pmtri />
         </div>
       </div>

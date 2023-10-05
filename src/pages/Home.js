@@ -61,6 +61,7 @@ function Home() {
   const [dataSexm, setDataSexm] = useState([]);
   const [dataNewemp, setDataNewemp] = useState([]);
   const [dataLiq, setDataLiq] = useState([]);
+  const [dataTga, setDataTga] =useState([])
   const [dataNvac, setDataNvac] = useState([]);
 
   const { gest } = useParams();
@@ -141,6 +142,20 @@ function Home() {
       .then((res) => {
         if (res.data.Status === "Success") {
           setDataLiq(res.data.Result);
+          /* console.log("Data", res.data);*/
+        } else {
+          console.log("Error detallado", res.data);
+        }
+      })
+      .catch((err) => console.log(err));
+  });
+
+  useEffect(() => {
+    axios
+      .get("http://192.168.1.9:4000/rptgan")
+      .then((res) => {
+        if (res.data.Status === "Success") {
+          setDataTga(res.data.Result);
           /* console.log("Data", res.data);*/
         } else {
           console.log("Error detallado", res.data);
@@ -248,6 +263,19 @@ function Home() {
               <div className="d-flex justify-content-center">
                 <h5 className="p-1 tit_hom">{item.nro}</h5>
               </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="border">
+        <div className="tit_hom d-flex justify-content-center">
+          <h5>Total Ganado</h5>
+        </div>
+        <div className="d-flex justify-content-center ">
+          {dataTga.map((item, index) => (
+            <div key="index" className="font1_1">
+              {item.LIQ} Bs.
             </div>
           ))}
         </div>
