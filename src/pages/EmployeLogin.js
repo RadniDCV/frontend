@@ -37,7 +37,7 @@ function EmployeLogin() {
       <div className="form-box">
         <div className="form-value p-4">
           <form onSubmit={handleSubmit}>
-            <h3 className="h3login">Empleados</h3>
+            <h3 className="h3login tit_gm">Empleados</h3>
             <div className="inputbox1 d-flex align-items-center">
               <input
                 type="email"
@@ -46,10 +46,10 @@ function EmployeLogin() {
                   setValues({ ...values, email: e.target.value })
                 }
                 placeholder="Correo"
-                className="input1"
+                className="input1 "
                 autoComplete="off"
               />
-              <div><i class="bi bi-envelope"></i></div>
+              <div className="iconlog"><i class="bi bi-envelope"></i></div>
             </div>
             <div className="inputbox1 d-flex align-items-center">
               <input
@@ -61,15 +61,15 @@ function EmployeLogin() {
                 placeholder="contraseña"
                 className="input1"
               />
-              <div><i class="bi bi-lock"></i></div>
+              <div className="iconlog"><i class="bi bi-lock"></i></div>
             </div>
 
             <div className="d-flex justify-content-around p-3">
-              <Button type="submit" variant="outline-success">
+              <Button type="submit" variant="outline-info">
                 Acceder
               </Button>
               <Link to="/start" variant="outline-danger">
-                <Button variant="outline-danger">Cancelar</Button>
+                <Button variant="outline-light">Cancelar</Button>
               </Link>
             </div>
           </form>

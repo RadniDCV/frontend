@@ -35,7 +35,7 @@ function Login() {
       <div className="form-box">
         <div className="form-value p-4">
           <div className="titpla">
-            <h3>Sistema de planillas</h3>
+            <h3 className="tit_gm">Sistema de planillas</h3>
           </div>
           <form onSubmit={handleSubmit}>
             <div className="inputbox1 d-flex align-items-center">
@@ -49,7 +49,7 @@ function Login() {
                   setValues({ ...values, email: e.target.value })
                 }
               />
-              <div><i class="bi bi-envelope"></i></div>
+              <div className="iconlog"><i class="bi bi-envelope"></i></div>
             </div>
             <div className="inputbox1 d-flex align-items-center">
               <input
@@ -61,15 +61,15 @@ function Login() {
                   setValues({ ...values, password: e.target.value })
                 }
               />
-              <div><i class="bi bi-lock"></i></div>
+              <div className="iconlog"><i class="bi bi-lock"></i></div>
             </div>
             <div className="d-flex justify-content-around p-3">
-              <Button type="submit" variant="outline-success">
+              <Button type="submit" variant="outline-info">
                 {" "}
                 Acceder
               </Button>
               <Link to="/start">
-                <Button variant="outline-danger">Cancelar</Button>
+                <Button variant="outline-light">Cancelar</Button>
               </Link>
             </div>
           </form>

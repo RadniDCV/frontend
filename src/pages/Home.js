@@ -247,11 +247,11 @@ function Home() {
 
   return (
     <div>
-      <div className="d-flex justify-content-center">
-        <div className="">
+      <div className="d-flex justify-content-center p-3">
+        <div className="border">
           <div className="">
             <div className="p-1">
-              <div className="tit_hom">Total de Salarios Basicos</div>
+              <div className="tit_hom ">Total de Salarios Basicos</div>
 
               <div>
                 <span className="font1_1">{salary} Bs. </span>

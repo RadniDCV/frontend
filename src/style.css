@@ -5,7 +5,7 @@
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    background: url('../public/grey07.avif')no-repeat;
+    background: url('../public/grey09.jpeg')no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -26,15 +26,16 @@
 
 .h3login {
     font-size: 2em;
-    color: #1f1f1f;
+    color: #fff;
     text-align: center;
 }
 
+/*linea login*/
 .inputbox1 {
     position: relative;
     margin: 30px 0;
     width: 310px;
-    border-bottom: 2px solid #1f1f1f;
+    border-bottom: 2px solid #f0f0f0;
 }
 
 .inputboxlab {
@@ -42,7 +43,7 @@
     top: 50%;
     left: 5px;
     transform: translateY(-50%);
-    color: #1f1f1f;
+    color: #fff;
     font-size: 1em;
     pointer-events: none;
     transition: .5s;
@@ -57,7 +58,7 @@
     outline: none;
     font-size: 1em;
     padding: 0 35px 0 5px;
-    color: #1f1f1f;
+    color: #fff
 }
 
 input:focus~.inputboxlab input:valid~.inputboxlab {
@@ -72,10 +73,15 @@ input:focus~.inputboxlab input:valid~.inputboxlab {
 
 }
 
+.iconlog{
+    color: #e3e3e3;
+    font-size: 20px;
+}
 
 .imagper {
     max-width: 70%;
     width: 500px;
+    
 }
 
 /*--------*/
@@ -460,4 +466,15 @@ input:focus~.inputboxlab input:valid~.inputboxlab {
 
 .tablefont{
     font-size: small;
+}
+
+.startBtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #e3e3e3;
+}
+.tit_gm{
+    color: #e3e3e3;
 }

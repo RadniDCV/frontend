@@ -16,7 +16,7 @@ function Repvacg() {
       const url = window.URL.createObjectURL(new Blob([blob]));
       const link = document.createElement("a");
       link.href = url;
-      link.setAttribute("download", `PlanillaTrib${gestion}.pdf`);
+      link.setAttribute("download", `VacacionesGen.pdf`);
       document.body.appendChild(link);
       link.click();
       link.parentNode.removeChild(link);
