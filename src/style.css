@@ -1,0 +1,463 @@
+/*Login empleados*/
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('../public/grey07.avif')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #6a6b6b;
+}
+
+.h3login {
+    font-size: 2em;
+    color: #1f1f1f;
+    text-align: center;
+}
+
+.inputbox1 {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #1f1f1f;
+}
+
+.inputboxlab {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #1f1f1f;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+
+}
+
+.inputbox1 .input1 {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #1f1f1f;
+}
+
+input:focus~.inputboxlab input:valid~.inputboxlab {
+    top: -5px
+}
+
+
+.iconp {
+    position: relative;
+    color: #1f1f1f;
+    font-size: 1.2em;
+
+}
+
+
+.imagper {
+    max-width: 70%;
+    width: 500px;
+}
+
+/*--------*/
+
+.titpla {
+    display: flex;
+    justify-content: center;
+}
+
+
+.imgLog {
+    display: flex;
+    justify-content: center;
+
+}
+
+.btnalig {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+
+}
+
+.table_border {
+    border: 2px solid #6d909d;
+
+}
+
+.employee_image {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 3px solid #6d909d
+}
+
+.imgLogin {
+
+    width: 250px;
+
+
+}
+
+.buttoms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.buttomsemp {
+    width: 30px;
+    height: 30px;
+}
+
+
+.alingtitle {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    font-size: 1rem;
+
+}
+
+.textemp {
+    font-size: 0.9rem;
+}
+
+.table1 {
+    justify-content: center;
+
+}
+
+.dept {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.title {
+    width: 180px;
+}
+
+.buttons1 {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.config {
+    padding: 30px 0px 0px 30px;
+}
+
+.return {
+    display: flex;
+    justify-content: center;
+}
+
+.bordes {
+
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 100%;
+
+}
+
+.employp {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 0px;
+}
+
+.font1 {
+    font-size: 1.1rem;
+    font-weight: bold
+}
+
+.font1_1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #71aa1a;
+    padding: 15px;
+}
+
+
+
+.font1_10 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #71aa1a;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.font1_2 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #eb584d;
+    padding: 15px;
+}
+
+
+.tit_hom {
+    color: #939596;
+
+}
+
+.tit_hom1 {
+    color: #939596;
+    display: flex;
+    justify-content: center;
+}
+
+.colr1 {
+    color: #ff1100;
+}
+
+.colr2 {
+    color: #71aa1a;
+}
+
+.colr3 {
+    color: #005eff;
+}
+
+.colr4 {
+    color: #ff7ff2;
+}
+
+.fontemp {
+    font-size: 3.5rem;
+    color: #71aa1a;
+}
+
+.employ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.per1 {
+    color: #71aa1a;
+}
+
+.per2 {
+    color: #eb584d;
+}
+
+
+
+.formlink {
+    text-decoration: none;
+}
+
+.dateformg {
+    background-color: #71aa1a;
+    color: #fff;
+    font-weight: bold
+}
+
+.iconsize {
+    font-size: 30px;
+}
+
+.color1 {
+    color: #ffa200;
+}
+
+.color2 {
+    color: #005eff;
+}
+
+.color3 {
+    color: #ff1100;
+}
+
+.filexls {
+    width: 220px;
+}
+
+.btnw {
+    width: 50px;
+}
+
+.empImg {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #6d909d;
+}
+
+.employee_prof {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #6d909d
+}
+
+.datper {
+    color: #6a6b6b;
+}
+
+.colorf {
+    font-size: 0.0rem;
+}
+
+.datper1 {
+    color: #939596;
+}
+
+
+/*empleados*/
+
+.main-body1 {
+    padding: 15px;
+}
+
+/*Cards Home*/
+
+.font1_20 {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #71aa1a;
+    padding: 15px;
+}
+
+.widthcar{
+    width: 65px;
+}
+
+.hicar{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.5rem;
+}
+
+
+.card {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
+@media (min-width: 350px){
+    .widthcar{
+        width: 160px;
+    }
+    .hicar{
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .font1_20 {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #71aa1a;
+        padding: 15px;
+    }
+    
+
+}
+
+
+
+.gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.gutters-sm>.col,
+.gutters-sm>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.mb-3,
+.my-3 {
+    margin-bottom: 1rem !important;
+}
+
+.bg-gray-300 {
+    background-color: #e2e8f0;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+.shadow-none {
+    box-shadow: none !important;
+}
+
+
+/*-----------*/
+
+.spanpre{
+    color:#ff1100
+}
+
+.linkedinh{
+    padding: 4px 25px;
+    background: rgb(35, 135, 63);
+    border: 1px solid #0c6331;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration:none;
+}
+
+.userc{
+    border: 1px solid #6a6b6b;
+    border-radius: 10px;
+    padding: 3px 10px 0px 10px;
+    background-color: #e3e3e3;
+    color:#000;
+    text-align: center;
+}
+.usertit{
+    text-align: center;
+}
+
+.tablefont{
+    font-size: small;
+}
