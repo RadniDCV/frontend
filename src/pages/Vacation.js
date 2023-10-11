@@ -28,7 +28,7 @@ function Vacation() {
       </div>
       <h5 className="text-center p-3">Detalle de Vacaciones</h5>
       <br />
-      <Table className="tablefont">
+      <Table striped hover className="tablefont">
         <thead>
           <tr>
             <th scope="col">ID</th>
@@ -45,8 +45,7 @@ function Vacation() {
             <tr>
               <th>{item.empid}</th>
               <th>
-                {item.firstname} {item.middlename} {item.lastname}{" "}
-                {item.lastname2}
+                {item.lastname} {item.lastname2} {item.firstname} {item.middlename}
               </th>
               <th>{item.startDatee}</th>
               <th>{item.anio}</th>

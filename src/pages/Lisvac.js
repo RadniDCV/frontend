@@ -62,7 +62,7 @@ function Lisvac() {
         <h5>Vacaciones Pendientes de aprobacion</h5>
       </div>
       
-        <Table className="tablefont">
+        <Table className="tablefont" striped hover>
           <thead>
             <tr>
               <th>Codigo </th>

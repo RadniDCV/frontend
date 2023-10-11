@@ -33,7 +33,7 @@ function Plamen() {
           <Button variant="outline-secondary btnw"><i class="bi bi-x-circle"></i></Button>
       </Link> 
       </div>
-      <Table>
+      <Table striped hover responsive='sm'>
       <thead>
             <tr>
               <th>Codigo</th>

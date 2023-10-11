@@ -121,7 +121,7 @@ function Vacsol() {
         </form>
       </div>
 
-      <Table className="tablefont">
+      <Table className="tablefont" hover striped>
         <thead>
           <tr>
             <th scope="col">Codigo de solitud</th>
