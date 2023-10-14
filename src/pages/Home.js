@@ -246,9 +246,9 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <div >
       <div className="d-flex justify-content-center p-3">
-        <div className="border">
+        <div className="border p-3">
           <div className="">
             <div className="p-1">
               <div className="tit_hom ">Total de Salarios Basicos</div>
@@ -278,7 +278,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="d-flex justity-content-center border">
+        <div className="d-flex justity-content-center border p-2">
           {dataSex.map((item, index) => (
             <div>
               <span className="tit_hom p-2">Hombres</span>
@@ -370,7 +370,7 @@ function Home() {
 
       <div className="border">
         <div className="tit_hom d-flex justify-content-center">
-          <h5>Total Ganado</h5>
+          <h5 className="p-2">Total Ganado</h5>
         </div>
         <div className="d-flex justify-content-center ">
           {dataTga.map((item, index) => (
@@ -383,7 +383,7 @@ function Home() {
 
       <div className="border">
         <div className="tit_hom d-flex justify-content-center">
-          <h5>Liquido pagable</h5>
+          <h5 className="p-2">Liquido pagable</h5>
         </div>
         <div className="d-flex justify-content-center ">
           {dataLiq.map((item, index) => (

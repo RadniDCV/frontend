@@ -32,6 +32,15 @@ function EmployeLogin() {
     }
   };
 
+  const handleLogout = () => {
+    axios
+      .get("http://192.168.1.9:4000/logout")
+      .then((res) => {
+        navigate("/start");
+      })
+      .catch((err) => console.log(err));
+  };
+
   return (
     <div className="section1">
       <div className="form-box">
@@ -68,9 +77,9 @@ function EmployeLogin() {
               <Button type="submit" variant="outline-info">
                 Acceder
               </Button>
-              <Link to="/start" variant="outline-danger">
-                <Button variant="outline-light">Cancelar</Button>
-              </Link>
+              
+                <Button onClick={handleLogout} variant="outline-light">Cancelar</Button>
+              
             </div>
           </form>
         </div>

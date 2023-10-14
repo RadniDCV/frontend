@@ -141,7 +141,7 @@ function Dashboard() {
                 </Link>
               </li>
 
-              <li onClick={handleLogout}>
+              <li onClick={handleLogout} className="nav-link px-0 align-middle text-white cur01">
                 <i className="fs-4 bi-power"></i>{" "}
                 <span className="ms-1 d-none - d-sm-inline">Cerrar Sesion</span>
               </li>

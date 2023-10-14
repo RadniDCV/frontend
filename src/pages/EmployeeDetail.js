@@ -63,6 +63,7 @@ function EmployeeDetail() {
       .then((res) => setEmployee(res.data.Result[0]))
       .catch((err) => console.log(err));
   }, [id]);
+  
   const handleLogout = () => {
     axios
       .get("http://192.168.1.9:4000/logout")
@@ -76,6 +77,10 @@ function EmployeeDetail() {
     navigate(`/vacsol/${id}`);
    /* console.log(id);*/
   };
+
+  const handlePasswordChange =() =>{
+    navigate(`/Passup/${id}`)
+  } 
 
   return (
     <div className="container">
@@ -189,10 +194,8 @@ function EmployeeDetail() {
             </div>
 
             <div>
+              
               <div className="d-flex justify-content-center p-3">
-                <h5>Solicitar Vacaciones</h5>
-              </div>
-              <div className="d-flex justify-content-center p-1">
                 <Button
                   variant="outline-success"
                   onClick={handleVacationRequest}
@@ -200,6 +203,18 @@ function EmployeeDetail() {
                   Solicitar Vacaciones
                 </Button>
               </div>
+
+              
+              
+              <div className="d-flex justify-content-center p-3">
+                <Button
+                  variant="outline-success"
+                  onClick={handlePasswordChange}
+                >
+                  Cambiar contraseña
+                </Button>
+              </div>
+
             </div>
           </div>
         </div>

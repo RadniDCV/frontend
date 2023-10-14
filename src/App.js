@@ -23,7 +23,6 @@ import EmployeeDetail from "./pages/EmployeeDetail";
 import UserA from "./pages/UserA";
 import Userinfo from "./pages/Userinfo";
 import PayrollAdd from "./pages/PayrollAdd";
-import PageNofound from "./pages/PageNofound";
 import PayDetail from "./pages/PayDetail";
 import PayDetailLi from "./pages/PayDetailLi";
 import Payrollemp from "./pages/Payrollemp";
@@ -38,9 +37,9 @@ import Lisvac from "./pages/Lisvac";
 import Pmschem from "./pages/reports/Pmschem";
 import Schem from "./pages/Schem";
 import Scheminfo from "./pages/Scheminfo";
-import Rephist from "./pages/reports/Rephist"
-
-
+import Rephist from "./pages/reports/Rephist";
+import Repbank from "./pages/reports/Repbank";
+import Passup from "./pages/Passup";
 
 function App() {
   return (
@@ -74,22 +73,21 @@ function App() {
           <Route path="employeeedit/:id" element={<EmployeeEdit />}></Route>
           <Route path="/addemplo" element={<AddEmp />}></Route>
           <Route path="/lisvac" element={<Lisvac />}></Route>
-          <Route path="/repschema" element={<Pmschem/>}></Route>
-          <Route path="/schem" element={<Schem/>}></Route>
-          <Route path="/chemlist" element={<Scheminfo/>}></Route>
-          <Route path="*" element={<PageNofound />}></Route>
-          <Route path="/rephi" element={<Rephist/>}></Route>
-          
-          
-         
+          <Route path="/repschema" element={<Pmschem />}></Route>
+          <Route path="/schem" element={<Schem />}></Route>
+          <Route path="/chemlist" element={<Scheminfo />}></Route>
+          <Route path="/rephi" element={<Rephist />}></Route>
+          <Route path="/repbank" element={<Repbank />}></Route>
         </Route>
+
         <Route path="/login" element={<Login />}></Route>
         <Route path="/start" element={<Start />}></Route>
-        <Route>
-          <Route path="/employeelogin" element={<EmployeLogin />}></Route>
-          <Route path="/employeedetail/:id" element={<EmployeeDetail />}></Route>
-          <Route path="/vacsol/:id" element={<Vacsol />}></Route>
-          <Route path="*" element={<PageNofound />}></Route>
+
+        <Route path="/">
+          <Route path="/employeelogin" element={<EmployeLogin />} />
+          <Route path="/employeedetail/:id" element={<EmployeeDetail />} />
+          <Route path="/vacsol/:id" element={<Vacsol />} />
+          <Route path="/Passup/:id" element={<Passup />} />
         </Route>
       </Routes>
     </BrowserRouter>

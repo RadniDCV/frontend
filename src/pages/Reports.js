@@ -32,16 +32,29 @@ function Reports() {
           <div className="px-2 col-5 tit_hom">Planilla Tributaria</div>
           <Pmtri />
         </div>
-        <div className="d-flex p-2">
+        <div className="d-flex p-2 ">
+          
           <div className="px-2 col-5 tit_hom">Vacaciones Generales</div>
+          <div className="col-3"></div>
           <Repvacg />
         </div>
         <div className="d-flex p-2">
-          <div className="px-2 col-5 tit_hom">Historial de empleados</div>
+          <div className="px-2 col-5 tit_hom">Historial empleados</div>
+          <div className="col-3"></div>
           <Link to="/rephi">
             <Button variant="outline-success">Ver</Button>
+            
           </Link>
         </div>
+        <div className="d-flex p-2">
+          <div className="px-2 col-5 tit_hom">Archivo para el banco</div>
+          <div className="col-3"></div>
+          <Link to="/repbank">
+            <Button variant="outline-success">Banco</Button>
+          </Link>
+        </div>
+
+
       </div>
     </div>
   );

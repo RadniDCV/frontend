@@ -9,7 +9,7 @@ function Start() {
       <div>
         <div>
           <div className="d-flex justify-content-center">
-            <h2 className="tit_gm">Sistema de pago de planillas</h2>
+            <h2 className="tit_gm tracking-in-contract-bck focus-in-expand-fwd">Sistema de pago de planillas</h2>
           </div>
           <div className="d-flex justify-content-around">
             <div className="startBtn">
